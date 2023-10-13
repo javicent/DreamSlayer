@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,9 +12,24 @@ public class PlayerController : MonoBehaviour
     private bool canJump = true;
     private Rigidbody2D rb;
 
+    public Button interactButton; // Reference to the UI button for interactions
+    private GameManager gameManager; // Reference to the GameManager
+
+    private Collider2D triggerCollider; // Reference to the trigger collider
+    private InteractableObject currentInteractableObject; // Store the current interactable object in range
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Attach a method to the button's click event.
+        interactButton.onClick.AddListener(OnInteractButtonClick);
+
+        // Find and store a reference to the GameManager in the scene.
+        gameManager = FindObjectOfType<GameManager>();
+
+        // Get the trigger collider component on the player character.
+        triggerCollider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -29,6 +45,13 @@ public class PlayerController : MonoBehaviour
         if (canJump && Input.GetButtonDown("Jump")) // Check for jump input
         {
             Jump(); // Call the jump method
+        }
+
+        // Check for interaction range with the currentInteractableObject
+        if (currentInteractableObject != null && Input.GetKeyDown(KeyCode.E))
+        {
+            // Perform the interaction with the current object
+            currentInteractableObject.Interact();
         }
     }
 
@@ -47,11 +70,32 @@ public class PlayerController : MonoBehaviour
         targetXPosition = xPosition;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Interactable"))
+        {
+            // Store the reference to the current interactable object.
+            InteractableObject interactable = other.GetComponent<InteractableObject>();
+            if (interactable != null)
+            {
+                currentInteractableObject = interactable;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Interactable"))
+        {
+            // Clear the reference to the current interactable object.
+            currentInteractableObject = null;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            //Debug.Log("can jump");
             canJump = true;
         }
     }
@@ -62,6 +106,16 @@ public class PlayerController : MonoBehaviour
         if (canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+    }
+
+    // Handle button click event
+    public void OnInteractButtonClick()
+    {
+        // If there is a currentInteractableObject, perform the interaction
+        if (currentInteractableObject != null)
+        {
+            currentInteractableObject.Interact();
         }
     }
 }

@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -8,16 +10,25 @@ public class PlayerAttack : MonoBehaviour
     public float attackDamage = 10.0f;
     public LayerMask enemyLayer;
     public float attackRange = 1.0f;
-    // This function is called when the "Attack" button is clicked.
+    [field: SerializeField] public EventReference attackSoundEvent {get; private set; }
+
     void Start()
     {
         // Start with the attack indicator image invisible.
         attackIndicator.enabled = false;
     }
+
     public void PerformAttack()
     {
-        // Add code here to perform the player's attack.
-        // For example, you can apply damage to the enemy or trigger attack animations.
+        if (!attackSoundEvent.IsNull)
+        {
+            EventInstance eventInstance = RuntimeManager.CreateInstance(attackSoundEvent);
+            eventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform)); // Set 3D position.
+            eventInstance.start();
+
+            // Release the FMOD event instance when it's no longer needed.
+            eventInstance.release();
+        }
 
         // Make the attack indicator image visible.
         attackIndicator.enabled = true;

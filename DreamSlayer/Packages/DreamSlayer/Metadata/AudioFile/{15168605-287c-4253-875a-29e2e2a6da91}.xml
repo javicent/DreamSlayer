@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{15168605-287c-4253-875a-29e2e2a6da91}">
+		<property name="assetPath">
+			<value>Melee Weapon Swing Sound Effects Fallout 3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.4857142857142858</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6a4fa248-7520-4f32-b44f-9670a0e0f620}</destination>
+		</relationship>
+	</object>
+</objects>

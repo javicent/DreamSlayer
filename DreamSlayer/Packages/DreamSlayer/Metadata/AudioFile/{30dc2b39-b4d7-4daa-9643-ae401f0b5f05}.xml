@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{30dc2b39-b4d7-4daa-9643-ae401f0b5f05}">
+		<property name="assetPath">
+			<value>Music/Eri'sTheme_Dylan.flac</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>157.89474999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6a4fa248-7520-4f32-b44f-9670a0e0f620}</destination>
+		</relationship>
+	</object>
+</objects>

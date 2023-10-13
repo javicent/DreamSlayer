@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{62e2df07-b16c-4fdc-8861-f19571834ab3}">
+		<property name="name">
+			<value>Captain Crunch</value>
+		</property>
+		<relationship name="folder">
+			<destination>{05912acc-5830-40dc-aaed-7923e890d9da}</destination>
+		</relationship>
+	</object>
+</objects>

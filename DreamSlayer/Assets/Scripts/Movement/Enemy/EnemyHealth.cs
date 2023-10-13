@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using FMOD.Studio;
+using FMODUnity;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class EnemyHealth : MonoBehaviour
     public float jumpForce = 5.0f; // Adjust the jump force as needed.
     public GameObject pickupPrefab; // Reference to the pickup sprite prefab.
     public float pickupDelay = 1.0f; // Delay before the loot becomes available for pickup.
+
+    [field: SerializeField] public EventReference deathSoundEvent {get; private set; }
 
     private Collider2D enemyCollider; // Reference to the enemy's collider.
 
@@ -38,12 +42,21 @@ public class EnemyHealth : MonoBehaviour
     {
         JumpBackward();
 
+        if (!deathSoundEvent.IsNull)
+        {
+            EventInstance eventInstance = RuntimeManager.CreateInstance(deathSoundEvent);
+            eventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform)); // Set 3D position.
+            eventInstance.start();
+
+            // Release the FMOD event instance when it's no longer needed.
+            eventInstance.release();
+        }
+
         // Delay before dropping the loot.
         yield return new WaitForSeconds(pickupDelay);
 
         // Disable the enemy's collider.
         enemyCollider.enabled = false;
-
 
         // Instantiate the pickup object at the enemy's position.
         Instantiate(pickupPrefab, transform.position, Quaternion.identity);
