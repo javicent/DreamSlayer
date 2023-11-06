@@ -7,10 +7,10 @@ public class EnemySpawnManager : MonoBehaviour
     public GameObject enemyPrefab;
     public Transform spawnPoint;
     public float spawnInterval = 3.0f;
-    public float spawnDelay = 5.0f; // Delay in seconds before spawning enemies
-    public int spawnLimit = 10; // Maximum number of enemies to spawn
-    public bool followEnemyOnSpawn = true; // Whether to follow the enemy on spawn
-    public float followEnemyDuration = 5.0f; // Duration to follow the enemy
+    public float spawnDelay = 5.0f; 
+    public int spawnLimit = 10; 
+    public bool followEnemyOnSpawn = true; 
+    public float followEnemyDuration = 5.0f; 
     public int phaseToSpawn = 1;
 
     private float spawnTimer = 0.0f;
@@ -23,12 +23,12 @@ public class EnemySpawnManager : MonoBehaviour
     private bool isFollowingEnemy = false;
     private float followTimer = 0.0f;
 
-    private bool delayStarted = false; // Flag to track if the delay has been started
+    private bool delayStarted = false; 
 
     void Start()
     {
-        gameManager = GameManager.Instance; // Get a reference to the GameManager.
-        cameraController = FindObjectOfType<CameraController>(); // Find and reference the CameraController.
+        gameManager = GameManager.Instance;
+        cameraController = FindObjectOfType<CameraController>();
     }
 
     void Update()
@@ -37,8 +37,8 @@ public class EnemySpawnManager : MonoBehaviour
         {
             if (!delayStarted)
             {
-                StartCoroutine(StartSpawnDelay()); // Start the delay only when the phase matches
-                delayStarted = true; // Mark the delay as started
+                StartCoroutine(StartSpawnDelay());
+                delayStarted = true;
             }
 
             if (delayComplete)
@@ -63,7 +63,7 @@ public class EnemySpawnManager : MonoBehaviour
 
         if (gameManager.CurrentPhase != phaseToSpawn)
         {
-            delayStarted = false; // Reset delayStarted when the phase changes
+            delayStarted = false;
             enemiesSpawned = 0;
         }
     }
@@ -78,14 +78,14 @@ public class EnemySpawnManager : MonoBehaviour
     {
         if (enemiesSpawned < spawnLimit)
         {
-            if (delayComplete) // Check if the delay is complete before spawning
+            if (delayComplete) 
             {
                 GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
                 enemiesSpawned++;
 
                 if (enemiesSpawned >= spawnLimit)
                 {
-                    delayComplete = false; // Only set delayComplete to false if the spawn limit is reached
+                    delayComplete = false;
                 }
 
                 if (followEnemyOnSpawn)

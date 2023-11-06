@@ -7,40 +7,61 @@ public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth = 100.0f;
     private float currentHealth;
+    private bool isDying = false; // Track the dying state.
 
     public Rigidbody2D rb; // Reference to the Rigidbody2D component.
     public float jumpForce = 5.0f; // Adjust the jump force as needed.
     public GameObject pickupPrefab; // Reference to the pickup sprite prefab.
     public float pickupDelay = 1.0f; // Delay before the loot becomes available for pickup.
 
-    [field: SerializeField] public EventReference deathSoundEvent {get; private set; }
+    public Animator enemyAnimator; // Reference to the enemy's Animator component.
+
+    [field: SerializeField] public EventReference deathSoundEvent { get; private set; }
+    [field: SerializeField] private RuntimeAnimatorController deathAnimationController; // Serialized field for the death animation controller.
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private PlayerController playerController;
+
+    private Renderer enemyRenderer; // Reference to the enemy's Renderer component.
 
     private Collider2D enemyCollider; // Reference to the enemy's collider.
 
-    void Start()
+    private void Start()
     {
+        enemyRenderer = GetComponent<Renderer>();
         currentHealth = maxHealth;
         enemyCollider = GetComponent<Collider2D>();
     }
 
+    public float GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
+        if (isDying)
+        {
+            return; // If already dying, do nothing.
+        }
 
+        currentHealth -= damage;
         if (currentHealth <= 0)
         {
+            currentHealth = 0; // Ensure health doesn't go below 0.
+            PlayDeathAnimation();
             StartCoroutine(DieWithDelay());
         }
         else
         {
-            // Apply a jump backward force to the enemy.
             JumpBackward();
         }
     }
 
-    IEnumerator DieWithDelay()
+    private IEnumerator DieWithDelay()
     {
-        JumpBackward();
+        isDying = true; // Set the dying state to true.
+        // Disable the enemy's renderer to make it invisible.
+        enemyRenderer.enabled = false;
 
         if (!deathSoundEvent.IsNull)
         {
@@ -52,6 +73,19 @@ public class EnemyHealth : MonoBehaviour
             eventInstance.release();
         }
 
+        // Play the death animation on the enemy using the Animator Controller.
+        if (playerAnimator != null && deathAnimationController != null)
+        {
+            playerAnimator.runtimeAnimatorController = deathAnimationController;
+        }
+
+        // Wait for the enemy death animation to finish and then switch back to the original player animation.
+        float deathAnimationDuration = 0.5f;
+        yield return new WaitForSeconds(deathAnimationDuration);
+
+        // Call the method in the PlayerController script to switch back to the original player animation.
+        playerController.SwitchToOriginalController();
+
         // Delay before dropping the loot.
         yield return new WaitForSeconds(pickupDelay);
 
@@ -61,11 +95,11 @@ public class EnemyHealth : MonoBehaviour
         // Instantiate the pickup object at the enemy's position.
         Instantiate(pickupPrefab, transform.position, Quaternion.identity);
 
-        // Add code to handle enemy death, such as playing death animations.
+        // Add code to handle enemy death, such as playing additional death animations.
         Destroy(gameObject); // Optionally remove the enemy GameObject.
     }
 
-    void JumpBackward()
+    private void JumpBackward()
     {
         // Calculate the direction from the enemy to the player.
         Vector2 jumpDirection = (PlayerPosition() - new Vector2(transform.position.x, transform.position.y)).normalized;
@@ -74,7 +108,7 @@ public class EnemyHealth : MonoBehaviour
         rb.AddForce(-jumpDirection * jumpForce, ForceMode2D.Impulse);
     }
 
-    Vector2 PlayerPosition()
+    private Vector2 PlayerPosition()
     {
         // Implement a method to get the player's position here. You can use a tag or other methods to find the player GameObject.
         GameObject player = GameObject.FindWithTag("Player");
@@ -87,5 +121,18 @@ public class EnemyHealth : MonoBehaviour
             // Return a default position or handle the case where the player is not found.
             return Vector2.zero;
         }
+    }
+
+    private void PlayDeathAnimation()
+    {
+        if (playerAnimator != null && deathAnimationController != null)
+        {
+            playerAnimator.runtimeAnimatorController = deathAnimationController;
+        }
+    }
+
+    public bool IsDying() // Public method to check the dying state.
+    {
+        return isDying;
     }
 }

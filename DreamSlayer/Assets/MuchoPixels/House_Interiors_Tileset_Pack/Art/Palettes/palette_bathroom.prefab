@@ -25,12 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4083080407001878170}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2325883186460281948}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &8284591221735331721
 Tilemap:
@@ -1509,364 +1510,249 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 87a44f52ce929c841a9d5e1565e65382, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: -3521427111303423466, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3521427111303423466, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6983358275279283047, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 6983358275279283047, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1169091165138729141, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1169091165138729141, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3300606671451264670, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3300606671451264670, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3155690606720968461, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3155690606720968461, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3116974730507115604, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3116974730507115604, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2983476358436010028, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2983476358436010028, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2797578448776851711, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2797578448776851711, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 180818828194593506, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -5181877912138065124, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -5181877912138065124, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4309067922572259023, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -4309067922572259023, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4719920441953140294, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -4719920441953140294, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 424640374056618819, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3360226103960135051, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3360226103960135051, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -9174244067029899023, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -9174244067029899023, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -150545708790703871, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -150545708790703871, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -196028476582618900, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -196028476582618900, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2889209925469297122, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2889209925469297122, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2141553197332089939, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -2141553197332089939, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -5807677388573095222, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -5807677388573095222, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2235141617128906387, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2235141617128906387, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4460989859543285799, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 4460989859543285799, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -573019512453249434, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -573019512453249434, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4486309160106536113, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 4486309160106536113, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1822452513176793564, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1822452513176793564, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3446809160783019374, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3446809160783019374, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7126325851185246801, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 7126325851185246801, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6089186949661689324, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 6089186949661689324, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4725955208724985027, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 4725955208724985027, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1440792775419611805, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1440792775419611805, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3773997810166076653, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3773997810166076653, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1395539743248188897, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1395539743248188897, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2702064901767447229, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -2702064901767447229, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3113594521541892790, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3113594521541892790, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1091449320473632872, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1091449320473632872, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2892984793159275152, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2892984793159275152, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5370414570755183422, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5370414570755183422, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5810531500438784143, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5810531500438784143, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -474781495250701013, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -474781495250701013, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7933173487101151337, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 7933173487101151337, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 9000836940767001015, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 9000836940767001015, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1627308405031128750, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1627308405031128750, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4442640414240506724, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 4442640414240506724, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8815848776762648347, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 8815848776762648347, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8013304299959938227, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 8013304299959938227, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2641545288114440883, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -2641545288114440883, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2729284867725980163, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2729284867725980163, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1119004141917789969, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1119004141917789969, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7545728214667223796, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -7545728214667223796, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -6847711137159085346, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -6847711137159085346, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -5274934573986297032, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -5274934573986297032, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8149663984789321154, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 8149663984789321154, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 376341611494484026, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7402441170518086807, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -7402441170518086807, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3618473741146760992, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3618473741146760992, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5793780039374090745, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5793780039374090745, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -6864223818152325343, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -6864223818152325343, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1798542236849769281, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1798542236849769281, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7412863424183015083, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 7412863424183015083, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -5736792850327261915, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -5736792850327261915, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1396869465526769540, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1396869465526769540, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 174522009667385097, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4816169149342624815, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -4816169149342624815, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5413683168192136658, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5413683168192136658, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1025496271039190004, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1025496271039190004, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6290739665706466581, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 6290739665706466581, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3336414294272976138, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3336414294272976138, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1734082123484466749, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1734082123484466749, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4893504443061032631, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -4893504443061032631, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5836616644020981534, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5836616644020981534, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3933595058853168296, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3933595058853168296, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -5426956464466165964, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -5426956464466165964, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 9113323916143035700, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 9113323916143035700, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8254730862847538980, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 8254730862847538980, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -587775324164326081, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -587775324164326081, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -232232329041122239, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -232232329041122239, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7438908405536102823, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -7438908405536102823, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1363294769866007018, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1363294769866007018, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3485604450946394154, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3485604450946394154, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2557977880877122602, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2557977880877122602, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -8047973342095045783, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -8047973342095045783, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4930245791181673880, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -4930245791181673880, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5540916498899014453, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5540916498899014453, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3124845353575135881, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3124845353575135881, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -538876462873433972, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -538876462873433972, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7278223458438899380, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 7278223458438899380, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7962852476369412120, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -7962852476369412120, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5807454485409629481, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5807454485409629481, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3738749579193186895, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3738749579193186895, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -3031793974779559754, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -3031793974779559754, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -695562670921234072, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -695562670921234072, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -5061696851993700937, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -5061696851993700937, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 1346985650875805153, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 1346985650875805153, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7289710596799995581, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -7289710596799995581, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7715323687896257440, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 7715323687896257440, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2026071436162938477, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2026071436162938477, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5431604124772259624, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5431604124772259624, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -217707191294765253, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -217707191294765253, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3234935071821025555, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3234935071821025555, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 7316570874536655726, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 7316570874536655726, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8104309932977387472, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 8104309932977387472, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -8908159015987777156, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -8908159015987777156, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2672439739132968781, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2672439739132968781, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1505335252984457826, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1505335252984457826, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4457194202189018330, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 4457194202189018330, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2217848583343611422, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 2217848583343611422, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5108486547116215677, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5108486547116215677, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 508041333411124191, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1175206741449623136, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1175206741449623136, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -9057392613874128506, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -9057392613874128506, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 3987465097067172599, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 3987465097067172599, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -2664230566666453769, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -2664230566666453769, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 667968951458825530, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 8335247278942997907, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 8335247278942997907, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6204370339513893361, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 6204370339513893361, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -8289235774932798106, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -8289235774932798106, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -7050107136102697718, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -7050107136102697718, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 151836135026451763, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1183202215358008609, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -1183202215358008609, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -865173252419484659, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: -865173252419484659, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 6765734227450393316, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 6765734227450393316, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 5018419292814264458, guid: 1f7874fa952f41c4eadbb5b9a23089d9,
-      type: 3}
+    m_Data: {fileID: 5018419292814264458, guid: 1f7874fa952f41c4eadbb5b9a23089d9, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 122
     m_Data:
@@ -1924,6 +1810,7 @@ TilemapRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -1961,6 +1848,90 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!1 &5735161823056313826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614529419850033574}
+  - component: {fileID: 8209384192054979743}
+  m_Layer: 0
+  m_Name: kids_bedroom_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1614529419850033574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735161823056313826}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2325883186460281948}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8209384192054979743
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735161823056313826}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5102807045355138418, guid: c6f5d38eb2e663147aeb2d719cca326c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &8493315835199897801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,13 +1956,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8493315835199897801}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 509059792311257746}
+  - {fileID: 1614529419850033574}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6436706054295751142
 Grid:
@@ -2018,3 +1991,5 @@ MonoBehaviour:
   m_Name: Palette Settings
   m_EditorClassIdentifier: 
   cellSizing: 0
+  m_TransparencySortMode: 0
+  m_TransparencySortAxis: {x: 0, y: 0, z: 1}

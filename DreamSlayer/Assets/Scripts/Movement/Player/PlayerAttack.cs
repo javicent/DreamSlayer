@@ -10,12 +10,19 @@ public class PlayerAttack : MonoBehaviour
     public float attackDamage = 10.0f;
     public LayerMask enemyLayer;
     public float attackRange = 1.0f;
-    [field: SerializeField] public EventReference attackSoundEvent {get; private set; }
+    [field: SerializeField] public EventReference attackSoundEvent { get; private set; }
+    public Animator playerAnimator; // Reference to the player's Animator component.
+    public string attackAnimationName = "Attack"; // Name of the attack animation trigger parameter.
+
+    private SpriteRenderer playerSpriteRenderer; // Reference to the player's SpriteRenderer.
 
     void Start()
     {
         // Start with the attack indicator image invisible.
         attackIndicator.enabled = false;
+
+        // Get the SpriteRenderer component from the player.
+        playerSpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void PerformAttack()
@@ -38,13 +45,18 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            // You can implement enemy health and damage handling here.
             EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
-            if (enemyHealth != null)
+            if (enemyHealth != null && !enemyHealth.IsDying())
             {
                 enemyHealth.TakeDamage(attackDamage);
+
+                // Trigger the attack animation on the player.
+                playerAnimator.SetTrigger(attackAnimationName);
             }
         }
+
+        // Mirror the attack indicator if the player sprite is mirrored.
+        attackIndicator.rectTransform.localScale = new Vector3(playerSpriteRenderer.flipX ? -1 : 1, 1, 1);
 
         // Hide the image after a short delay.
         StartCoroutine(HideAttackIndicator());

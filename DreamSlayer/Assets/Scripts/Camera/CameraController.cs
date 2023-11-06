@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
             // Follow the player
             if (playerTransform != null)
             {
-                Vector3 targetPosition = playerTransform.position + new Vector3(0, 2, -10); // Adjust the z position as needed
+                Vector3 targetPosition = playerTransform.position + new Vector3(0, 1, -10); // Adjust the z position as needed
                 mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, targetPosition, followSpeed * Time.deltaTime);
             }
         }

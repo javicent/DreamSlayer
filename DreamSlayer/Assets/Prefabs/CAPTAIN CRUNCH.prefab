@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2187855570252107612}
   - component: {fileID: 3061409711515871225}
-  - component: {fileID: 7379644542006294114}
+  - component: {fileID: 6635820959722547605}
   - component: {fileID: 7936580942988963331}
+  - component: {fileID: 7379644542006294114}
   - component: {fileID: 8439942527840262051}
   - component: {fileID: 7348302328220687682}
+  - component: {fileID: 3086876919522000716}
   m_Layer: 7
   m_Name: CAPTAIN CRUNCH
   m_TagString: Untagged
@@ -88,6 +90,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6635820959722547605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096566268781430959}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e117939a5975194d8898c31fbba0621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 7936580942988963331}
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  damageThreshold: 10
+  enemyPrefab: {fileID: 0}
+  spawnDelay: 2
+--- !u!114 &7936580942988963331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096566268781430959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d718b8c075aad2418b7000e34e2a215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  rb: {fileID: 8439942527840262051}
+  jumpForce: 5
+  pickupPrefab: {fileID: 0}
+  pickupDelay: 0
+  enemyAnimator: {fileID: 0}
+  <deathSoundEvent>k__BackingField:
+    Guid:
+      Data1: 1446153480
+      Data2: 1321840786
+      Data3: -1710513002
+      Data4: -1445164602
+    Path: event:/SFX/Captain Crunch/CaptainCrunchDeath
+  deathAnimationController: {fileID: 9100000, guid: 92058e2024bccb04cbb4917505c901f9, type: 2}
+  playerAnimator: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!114 &7379644542006294114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,28 +154,12 @@ MonoBehaviour:
   rightBoundary: {fileID: 0}
   normalMoveSpeed: 5
   chaseMoveSpeed: 2
-  jumpForce: 5
+  jumpForce: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   chaseRange: 5
---- !u!114 &7936580942988963331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6096566268781430959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d718b8c075aad2418b7000e34e2a215, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 20
-  rb: {fileID: 8439942527840262051}
-  jumpForce: 5
-  pickupPrefab: {fileID: 0}
-  pickupDelay: 1
+  delayDuration: 10.226
 --- !u!50 &8439942527840262051
 Rigidbody2D:
   serializedVersion: 4
@@ -198,3 +232,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3801645, y: 0.3371156}
   m_EdgeRadius: 0
+--- !u!95 &3086876919522000716
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6096566268781430959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ad35d8581e0da2409cfaf4bc053b273, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -11,25 +11,29 @@ public class EnemyMovement : MonoBehaviour
     public float jumpForce = 5.0f;
     public LayerMask groundLayer;
     public float chaseRange = 5.0f;
-    
+
     public float delayDuration = 2.0f; // Delay duration exposed in the inspector
 
     private bool movingRight = true;
     private Rigidbody2D rb;
     private Transform player;
     private bool delayMovement = true; // Flag to delay movement upon spawn
+    private bool canMove = true; // Flag to control movement
+
+    // Health of the enemy
+    private EnemyHealth enemyHealth;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Initialize the Rigidbody2D component.
         player = GameObject.FindWithTag("Player").transform; // Assuming the player has the "Player" tag.
-
+        enemyHealth = GetComponent<EnemyHealth>();
         StartCoroutine(StartDelay()); // Start the delay coroutine upon spawn.
     }
 
     void Update()
     {
-        if (!delayMovement)
+        if (canMove && !delayMovement)
         {
             // Determine the enemy's current position.
             Vector3 position = transform.position;
@@ -37,6 +41,12 @@ public class EnemyMovement : MonoBehaviour
             // Calculate the distance to the player.
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
+            // Access the health value from the EnemyHealth script
+            float health = enemyHealth.GetCurrentHealth();
+
+            // Check if the health is greater than 1 to allow movement
+            canMove = (health > 1);
+            
             if (distanceToPlayer <= chaseRange)
             {
                 // The player is within the chase range; chase the player at a slower speed.

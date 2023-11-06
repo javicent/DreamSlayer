@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Packages/DreamSlayer/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638327195288835090
+  lastModified: 638332898860626043
   FileSizes:
   - Name: Desktop
-    Value: 344224
+    Value: 484864
   Exists: 1
 --- !u!114 &-8072184389600243487
 MonoBehaviour:
@@ -169,6 +169,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4634034799334426564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Captain Crunch/CaptainCrunchTaunt2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Captain Crunch/CaptainCrunchTaunt2
+  Guid:
+    Data1: -115943392
+    Data2: 1109406560
+    Data3: 1397897358
+    Data4: -746023700
+  Banks:
+  - {fileID: -9152673603581877418}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4552
 --- !u!114 &-2690803128914194931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +211,7 @@ MonoBehaviour:
   Path: Packages/DreamSlayer/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638327195286487054
+  lastModified: 638332898859636726
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -214,12 +241,15 @@ MonoBehaviour:
   - {fileID: 1044970333320514639}
   - {fileID: 6875008567583642910}
   - {fileID: 2842760089226744951}
+  - {fileID: -4634034799334426564}
+  - {fileID: 7704772043890494069}
+  - {fileID: 724262047049280380}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2690803128914194931}
   StringsBanks:
   - {fileID: 7087021144475604605}
-  cacheTime: 638327195288835090
+  cacheTime: 638332898860626043
   cacheVersion: 131608
 --- !u!114 &530076276111594720
 MonoBehaviour:
@@ -236,11 +266,38 @@ MonoBehaviour:
   Path: Packages/DreamSlayer/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638327195287125843
+  lastModified: 638332898860279360
   FileSizes:
   - Name: Desktop
     Value: 4391968
   Exists: 1
+--- !u!114 &724262047049280380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Captain Crunch/CaptainCrunchTaunt3
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Captain Crunch/CaptainCrunchTaunt3
+  Guid:
+    Data1: -606638149
+    Data2: 1122552233
+    Data3: -1404383051
+    Data4: 1614513274
+  Banks:
+  - {fileID: -9152673603581877418}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2544
 --- !u!114 &1044970333320514639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +421,7 @@ MonoBehaviour:
   Path: Packages/DreamSlayer/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638327195286437235
+  lastModified: 638332898859596831
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -411,11 +468,38 @@ MonoBehaviour:
   Path: Packages/DreamSlayer/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638327195286526945
+  lastModified: 638332898859676622
   FileSizes:
   - Name: Desktop
-    Value: 1320
+    Value: 1446
   Exists: 1
+--- !u!114 &7704772043890494069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Captain Crunch/CaptainCrunchTaunt1
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Captain Crunch/CaptainCrunchTaunt1
+  Guid:
+    Data1: -1526670771
+    Data2: 1096272623
+    Data3: -1932096126
+    Data4: -2048861846
+  Banks:
+  - {fileID: -9152673603581877418}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4506
 --- !u!114 &8928319672782040715
 MonoBehaviour:
   m_ObjectHideFlags: 0
